@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="Bg">
+    <h1>Movie List</h1>
+
+    <!-- Modal Start -->
+    <dialog id="modal">
+        <div class="form_container">
+            <form id="form_modal">
+                <p>Movie Name</p>
+                <input type="text" id="movie">
+
+                <p>Release Date</p>
+                <input type="date" name="" id="releaseDate">
+
+                <p>Synopsis</p>
+                <textarea id="synopsis" cols="30" rows="10"></textarea>
+                <div class="buttons">
+                    <button type="submit">Add</button>
+                    <button id="modal-close" onclick="modal_close()">Close</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <!-- Modal End -->
+
+    <div class="container">
+        <div class="open">
+            <p>Add New Movie</p>
+            <button id="modal-open" class="button_more" onclick="modal_open()">
+                <span class="x-line"></span>
+                <span class="x-line"></span>
+            </button>
+        </div>
+
+        <div class="movies">
+            <h3>Movies</h3>
+
+            <form id="post">
+                <button type="button" onclick="deleteAll()">Delete All Movies</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
