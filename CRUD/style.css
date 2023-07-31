@@ -1,0 +1,52 @@
+body, .comentarios{
+    display: grid;
+    place-items: center;
+}
+
+/* Boton more */
+.open{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border: 2px solid #000;
+}
+
+.button_more{
+    border: 5px solid #BDBDBD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 70%;
+}
+
+.x-line {
+    width: 6px;
+    height: 75%;
+    background-color: #BDBDBD;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.x-line:first-child {
+  transform: rotate(90deg);
+}
+
+/* form modal */
+textarea{
+    resize: none;/* Propiedad para que el usuario no modifique el tamaña  */
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px;
+    gap: 8px;
+}
